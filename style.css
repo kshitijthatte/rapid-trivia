@@ -1,0 +1,150 @@
+/* Drawer */
+
+.drawer-frame {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.drawer {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 16rem;
+  border-right: 1px solid var(--light-grey);
+  height: 100%;
+}
+
+.drawer-header {
+  padding: 1rem 1rem;
+}
+
+.drawer-content {
+  overflow-y: auto;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.side-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: inherit;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.side-nav-item:hover {
+  background-color: var(--secondary-hover);
+}
+
+.main {
+  width: 100%;
+  overflow-y: auto;
+}
+
+.nav-title {
+  color: inherit;
+}
+
+.divider {
+  border: none;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.app-container {
+  padding: 1rem;
+}
+
+/* App Header Styles */
+
+.app-header {
+  padding: 0 5rem;
+  background: center / cover no-repeat url(./assets/header-img.jpg);
+  border-radius: 0.5rem;
+  height: 50vh;
+  margin-bottom: 1rem;
+}
+
+.app-header-contents {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white);
+  gap: 0.5rem;
+}
+
+.app-header-contents .btn {
+  flex-wrap: wrap;
+  max-width: max-content;
+}
+
+.app-header-contents .search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 10rem;
+  width: 40%;
+}
+
+.app-header-contents .search-bar input {
+  width: 100%;
+}
+
+/* Categories Styles */
+
+.categories {
+  gap: 1rem;
+  justify-items: center;
+  margin-top: 1rem;
+}
+
+.category-img {
+  height: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.list-group {
+  list-style: auto;
+  margin-left: 2rem;
+  padding: 0.5rem 0;
+}
+
+/* Utility CLasses */
+
+.margin-l-1 {
+  margin-left: 1rem;
+}
+
+a.btn {
+  display: inline-block;
+}
+
+@media (max-width: 700px) {
+  .categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .app-header {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .categories {
+    grid-template-columns: 1fr;
+  }
+}
