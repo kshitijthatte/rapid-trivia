@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rapid Trivia - Categories</title>
+    <link rel="stylesheet" href="https://iceberg-ui.netlify.app/styles.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="drawer-frame">
+      <aside class="drawer">
+        <div class="drawer-header">
+          <div class="text-md">Hi, User</div>
+          <div class="text-sm">jhondoe@tmail.com</div>
+        </div>
+        <hr class="divider" />
+        <div class="drawer-content">
+          <nav class="side-nav">
+            <a class="side-nav-item" href="#">
+              <span class="material-icons">play_arrow</span>
+              Play
+            </a>
+            <a class="side-nav-item" href="#">
+              <span class="material-icons">leaderboard</span>
+              Leaderboard
+            </a>
+            <a class="side-nav-item" href="#">
+              <span class="material-icons">notifications</span>
+              Notifications
+            </a>
+            <a class="side-nav-item" href="#">
+              <span class="material-icons">contact_support</span>
+              Support
+            </a>
+          </nav>
+        </div>
+      </aside>
+      <div class="main">
+        <nav class="nav">
+          <div class="nav-section">
+            <button class="material-icons nav-icon header-navigation-icon">
+              menu
+            </button>
+            <a class="nav-title" href="/">Rapid Trivia</a>
+          </div>
+          <div class="nav-section nav-section-right">
+            <a class="btn btn-primary btn-sm btn-icon" href="/user.html">
+              <span class="material-icons"> notifications </span>
+            </a>
+            <a class="btn btn-primary btn-sm btn-icon" href="/user.html">
+              <span class="material-icons"> person </span>
+              User
+            </a>
+          </div>
+        </nav>
+        <div class="app-container">
+          <h2>Quiz Categories</h2>
+          <div class="text-sm">Pick a category to start the quiz</div>
+          <div class="grid grid-col-4 categories">
+            <a class="card card-overlay" href="/rules.html">
+              <img
+                class="card-img category-img"
+                src="https://source.unsplash.com/FO7JIlwjOtU"
+              />
+              <div class="overlay-content">
+                <div class="card-title">Tech</div>
+              </div>
+            </a>
+            <a class="card card-overlay" href="/rules.html">
+              <img
+                class="card-img category-img"
+                src="https://source.unsplash.com/IfO43eONJeo"
+              />
+              <div class="overlay-content">
+                <div class="card-title">Cricket</div>
+              </div>
+            </a>
+            <a class="card card-overlay" href="/rules.html">
+              <img
+                class="card-img category-img"
+                src="https://source.unsplash.com/_WuPjE-MPHo"
+              />
+              <div class="overlay-content">
+                <div class="card-title">India</div>
+              </div>
+            </a>
+            <a class="card card-overlay" href="/rules.html">
+              <img
+                class="card-img category-img"
+                src="https://source.unsplash.com/yubCnXAA3H8"
+              />
+              <div class="overlay-content">
+                <div class="card-title">Entertainment</div>
+              </div>
+            </a>
+            <a class="card card-overlay" href="/rules.html">
+              <img
+                class="card-img category-img"
+                src="https://source.unsplash.com/FO7JIlwjOtU"
+              />
+              <div class="overlay-content">
+                <div class="card-title">Tech</div>
+              </div>
+            </a>
+            <a class="card card-overlay" href="/rules.html">
+              <img
+                class="card-img category-img"
+                src="https://source.unsplash.com/IfO43eONJeo"
+              />
+              <div class="overlay-content">
+                <div class="card-title">Cricket</div>
+              </div>
+            </a>
+            <a class="card card-overlay" href="/rules.html">
+              <img
+                class="card-img category-img"
+                src="https://source.unsplash.com/_WuPjE-MPHo"
+              />
+              <div class="overlay-content">
+                <div class="card-title">India</div>
+              </div>
+            </a>
+            <a class="card card-overlay" href="/rules.html">
+              <img
+                class="card-img category-img"
+                src="https://source.unsplash.com/yubCnXAA3H8"
+              />
+              <div class="overlay-content">
+                <div class="card-title">Entertainment</div>
+              </div>
+            </a>
+            <a class="card card-overlay" href="/rules.html">
+              <img
+                class="card-img category-img"
+                src="https://source.unsplash.com/FO7JIlwjOtU"
+              />
+              <div class="overlay-content">
+                <div class="card-title">Tech</div>
+              </div>
+            </a>
+            <a class="card card-overlay" href="/rules.html">
+              <img
+                class="card-img category-img"
+                src="https://source.unsplash.com/IfO43eONJeo"
+              />
+              <div class="overlay-content">
+                <div class="card-title">Cricket</div>
+              </div>
+            </a>
+            <a class="card card-overlay" href="/rules.html">
+              <img
+                class="card-img category-img"
+                src="https://source.unsplash.com/_WuPjE-MPHo"
+              />
+              <div class="overlay-content">
+                <div class="card-title">India</div>
+              </div>
+            </a>
+            <a class="card card-overlay" href="/rules.html">
+              <img
+                class="card-img category-img"
+                src="https://source.unsplash.com/yubCnXAA3H8"
+              />
+              <div class="overlay-content">
+                <div class="card-title">Entertainment</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const headerNavigationIcon = document.querySelector(
+        ".header-navigation-icon"
+      );
+
+      const drawer = document.querySelector(".drawer");
+      headerNavigationIcon.addEventListener("click", () => {
+        drawer.style.display === "none"
+          ? (drawer.style.display = "flex")
+          : (drawer.style.display = "none");
+      });
+    </script>
+  </body>
+</html>
