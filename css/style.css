@@ -2,7 +2,7 @@
 
 .app-header {
   padding: 0 5rem;
-  background: center / cover no-repeat url(./assets/header-img.jpg);
+  background: center / cover no-repeat url(../assets/header-img.jpg);
   border-radius: 0.5rem;
   height: 50vh;
   margin-bottom: 1rem;

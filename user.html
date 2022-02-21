@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rapid Trivia</title>
+    <title>Rapid Trivia - User</title>
     <link rel="stylesheet" href="https://iceberg-ui.netlify.app/styles.css" />
     <link rel="stylesheet" href="/css/defaults.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="/css/user.css" />
   </head>
   <body>
     <div class="drawer-frame">
@@ -57,64 +57,42 @@
           </div>
         </nav>
         <div class="app-container">
-          <div class="app-header">
-            <div class="app-header-contents">
-              <div class="text-md">Hi, User</div>
-              <div class="page-heading text-lg">Let's Play & Learn</div>
-              <div class="search-bar input-group">
-                <input
-                  type="text"
-                  class="input search-bar"
-                  placeholder="Search quizes or categories"
-                />
-                <span class="material-icons">search</span>
-              </div>
-              <div class="btn btn-primary btn-icon">
-                Start a random quiz
-                <span class="material-icons"> arrow_right_alt</span>
+          <div class="user-card">
+            <div class="avatar-container">
+              <img
+                class="avatar"
+                src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+              />
+              <div class="avatar-details">
+                <div class="avatar-subtitle">Hi,</div>
+                <div class="avatar-title">Jhon Doe</div>
               </div>
             </div>
-          </div>
-          <h2>Popular Categories</h2>
-          <div class="grid grid-col-4 categories">
-            <a class="card card-overlay" href="/rules.html">
-              <img
-                class="card-img category-img"
-                src="https://source.unsplash.com/FO7JIlwjOtU"
-              />
-              <div class="overlay-content">
-                <div class="card-title">Tech</div>
+            <div class="user-card-details">
+              <div class="user-card-title">
+                <div class="text-md">Personal Details</div>
+                <button class="btn btn-transparent btn-sm">Edit</button>
               </div>
-            </a>
-            <a class="card card-overlay" href="/rules.html">
-              <img
-                class="card-img category-img"
-                src="https://source.unsplash.com/IfO43eONJeo"
-              />
-              <div class="overlay-content">
-                <div class="card-title">Cricket</div>
+              <div class="detail">
+                <div class="text-xs">Name</div>
+                <div class="text-sm">Jhon Doe</div>
               </div>
-            </a>
-            <a class="card card-overlay" href="/rules.html">
-              <img
-                class="card-img category-img"
-                src="https://source.unsplash.com/_WuPjE-MPHo"
-              />
-              <div class="overlay-content">
-                <div class="card-title">India</div>
+              <div class="detail">
+                <div class="text-xs">Email</div>
+                <div class="text-sm">jhondoe@tmail.com</div>
               </div>
-            </a>
-            <a class="card card-overlay" href="/categories.html">
-              <img
-                class="card-img category-img"
-                src="https://source.unsplash.com/pJadQetzTkI"
-              />
-              <div class="overlay-content">
-                <div class="card-title">
-                  View All <span class="material-icons"> arrow_right_alt</span>
-                </div>
+              <div class="detail">
+                <div class="text-xs">Password</div>
+                <div class="text-sm">********</div>
               </div>
-            </a>
+            </div>
+            <div class="user-card-details">
+              <div class="user-card-title">
+                <div class="text-md">Previous Scores</div>
+                <button class="btn btn-transparent btn-sm">View</button>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-sm">Sign Out</button>
           </div>
         </div>
       </div>
