@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rapid Trivia - Login</title>
+    <link rel="stylesheet" href="https://iceberg-ui.netlify.app/styles.css" />
+    <link rel="stylesheet" href="/css/defaults.css" />
+    <link rel="stylesheet" href="/css/authentication.css" />
+  </head>
+  <body>
+    <div class="drawer-frame">
+      <aside class="drawer">
+        <div class="drawer-header">
+          <div class="text-md">Hi, User</div>
+          <div class="text-sm">jhondoe@tmail.com</div>
+        </div>
+        <hr class="divider" />
+        <div class="drawer-content">
+          <nav class="side-nav">
+            <a class="side-nav-item" href="#">
+              <span class="material-icons">play_arrow</span>
+              Play
+            </a>
+            <a class="side-nav-item" href="#">
+              <span class="material-icons">leaderboard</span>
+              Leaderboard
+            </a>
+            <a class="side-nav-item" href="#">
+              <span class="material-icons">notifications</span>
+              Notifications
+            </a>
+            <a class="side-nav-item" href="#">
+              <span class="material-icons">contact_support</span>
+              Support
+            </a>
+          </nav>
+        </div>
+      </aside>
+      <div class="main">
+        <nav class="nav">
+          <div class="nav-section">
+            <button class="material-icons nav-icon header-navigation-icon">
+              menu
+            </button>
+            <a class="nav-title" href="/">Rapid Trivia</a>
+          </div>
+          <div class="nav-section nav-section-right">
+            <a class="btn btn-primary btn-sm btn-icon" href="/login.html">
+              <span class="material-icons"> notifications </span>
+            </a>
+            <a class="btn btn-primary btn-sm btn-icon" href="/login.html">
+              <span class="material-icons"> person </span>
+              User
+            </a>
+          </div>
+        </nav>
+        <div class="app-container">
+          <div class="authentication-container">
+            <div class="card input-group">
+              <div class="text-lg text-center">Rapid Trivia - Login</div>
+
+              <input type="email" class="input" placeholder="Email" />
+              <input type="password" class="input" placeholder="Password" />
+              <div class="btn btn-primary text-center">Log In</div>
+              <a class="text-description text-center" href="#"
+                >Forgot password?</a
+              >
+
+              <hr class="divider" />
+              <a class="btn outline-primary text-center" href="/signup.html"
+                >Or Sign Up Now!</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://iceberg-ui.netlify.app/components/navigation/drawer-nav.js"></script>
+  </body>
+</html>
