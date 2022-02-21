@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rapid Trivia - Login</title>
+    <title>Rapid Trivia - User</title>
     <link rel="stylesheet" href="https://iceberg-ui.netlify.app/styles.css" />
     <link rel="stylesheet" href="/css/defaults.css" />
-    <link rel="stylesheet" href="/css/authentication.css" />
+    <link rel="stylesheet" href="/css/user.css" />
   </head>
   <body>
     <div class="drawer-frame">
@@ -57,24 +57,38 @@
           </div>
         </nav>
         <div class="app-container">
-          <div class="authentication-container">
-            <div class="card input-group">
-              <div class="text-lg text-center">Rapid Trivia - Login</div>
-
-              <input type="email" class="input" placeholder="Email" />
-              <input type="password" class="input" placeholder="Password" />
-              <a class="btn btn-primary text-center" href="/user.html"
-                >Log In</a
-              >
-              <a class="text-description text-center" href="#"
-                >Forgot password?</a
-              >
-
-              <hr class="divider" />
-              <a class="btn outline-primary text-center" href="/signup.html"
-                >Or Sign Up Now!</a
-              >
+          <div class="user-card">
+            <div class="avatar-container">
+              <img
+                class="avatar"
+                src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"
+              />
+              <div class="avatar-details">
+                <div class="avatar-subtitle">Hi,</div>
+                <div class="avatar-title">Jhon Doe</div>
+              </div>
             </div>
+            <div class="user-card-details">
+              <div class="user-card-title">
+                <div class="text-md">Personal Details</div>
+                <button class="btn btn-transparent btn-sm">Edit</button>
+              </div>
+              <div class="detail">
+                <div class="text-xs">Name</div>
+                <div class="text-sm">Jhon Doe</div>
+              </div>
+              <div class="detail">
+                <div class="text-xs">Password</div>
+                <div class="text-sm">********</div>
+              </div>
+            </div>
+            <div class="user-card-details">
+              <div class="user-card-title">
+                <div class="text-md">Previous Scores</div>
+                <button class="btn btn-transparent btn-sm">View</button>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-sm">Sign Out</button>
           </div>
         </div>
       </div>
